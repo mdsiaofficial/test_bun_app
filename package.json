@@ -1,0 +1,20 @@
+{
+  "name": "bun_app",
+  "module": "index.ts",
+  "type": "module",
+  "author": {
+    "name": "Md Shoriful Islam Ashiq",
+    "email": "ashiq@midgen.ai",
+    "url": "https://ashiq-devv.vercel.app"
+  },
+  "scripts": {
+    "dev": "bun run index.ts"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
