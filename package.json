@@ -9,6 +9,7 @@
   },
   "scripts": {
     "dev": "bun run --watch src/index.ts"
+
   },
   "private": true,
   "devDependencies": {
