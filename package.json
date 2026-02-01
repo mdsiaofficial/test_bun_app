@@ -1,24 +1,26 @@
 {
-  "name": "bun_app",
-  "module": "index.ts",
+  "name": "bun-app",
+  "version": "1.0.0",
+  "description": "Production-grade Bun application with TypeORM and MySQL",
   "type": "module",
-  "author": {
-    "name": "Md Shoriful Islam Ashiq",
-    "email": "ashiq@midgen.ai",
-    "url": "https://ashiq-devv.vercel.app"
-  },
   "scripts": {
-    "dev": "bun run --watch src/index.ts"
-
-  },
-  "private": true,
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+    "dev": "bun --watch src/server.ts",
+    "start": "bun src/server.ts",
+    "build": "bun build src/server.ts --outdir ./dist --target bun",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "migration:generate": "typeorm-ts-node-commonjs migration:generate",
+    "migration:run": "typeorm-ts-node-commonjs migration:run",
+    "migration:revert": "typeorm-ts-node-commonjs migration:revert"
   },
   "dependencies": {
-    "bcryptjs": "^3.0.3"
+    "typeorm": "^0.3.19",
+    "mysql2": "^3.6.5",
+    "reflect-metadata": "^0.2.1",
+    "dotenv": "^16.3.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bun-types": "latest"
   }
 }
