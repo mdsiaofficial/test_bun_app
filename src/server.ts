@@ -22,8 +22,8 @@ const start_server = async () => {
 ║  🚀 Server is running!                     ║
 ║                                            ║
 ║  Environment: ${env.node_env.padEnd(27)}  ║
-║  Port: ${String(env.port).padEnd(33)}  ║
-║  URL: http://localhost:${env.port}${" ".repeat(19 - String(env.port).length)}║
+║  Port: ${String(env.port).padEnd(33)}   ║
+║  URL: http://localhost:${env.port}${" ".repeat(19 - String(env.port).length)} ║
 ║                                            ║
 ╚════════════════════════════════════════════╝
     `);

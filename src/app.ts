@@ -5,6 +5,9 @@ import { logger_middleware } from "./middlewares/logger";
 import { handle_routes } from "./routes/index_routes";
 
 export const create_app = () => {
+  // ! ei create app ki kortese? 
+  // ? ei create app actually ekta async function return kortase, 
+  // ? jeita receive kore request, and return kore response er promise.
   return {
     async fetch(request: Request): Promise<Response> {
       try {

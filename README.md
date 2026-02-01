@@ -72,18 +72,21 @@ curl -fsSL https://bun.sh/install | bash
 ```
 
 2. **Clone and setup the project**:
+
 ```bash
 cd bun-app
 bun install
 ```
 
 3. **Configure environment variables**:
+
 ```bash
 cp .env.example .env
 # Edit .env with your database credentials
 ```
 
 4. **Create the database**:
+
 ```sql
 CREATE DATABASE bun_app_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
@@ -91,16 +94,19 @@ CREATE DATABASE bun_app_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ## 🚀 Running the Application
 
 ### Development Mode (with auto-reload)
+
 ```bash
 bun run dev
 ```
 
 ### Production Mode
+
 ```bash
 bun run start
 ```
 
 ### Build
+
 ```bash
 bun run build
 ```
@@ -108,11 +114,13 @@ bun run build
 ## 📝 API Endpoints
 
 ### Health Check
+
 - `GET /` or `GET /health` - Server health check
 
 ### User Endpoints
 
 #### Create User
+
 ```bash
 POST /api/users
 Content-Type: application/json
@@ -127,16 +135,19 @@ Content-Type: application/json
 ```
 
 #### Get All Users
+
 ```bash
 GET /api/users?page=1&limit=10
 ```
 
 #### Get User by ID
+
 ```bash
 GET /api/users/{id}
 ```
 
 #### Update User
+
 ```bash
 PUT /api/users/{id}
 Content-Type: application/json
@@ -148,11 +159,13 @@ Content-Type: application/json
 ```
 
 #### Delete User
+
 ```bash
 DELETE /api/users/{id}
 ```
 
 #### Toggle User Status
+
 ```bash
 PATCH /api/users/{id}/toggle-status
 ```

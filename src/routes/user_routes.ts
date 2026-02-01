@@ -11,6 +11,7 @@ export const user_routes = async (
   request: Request,
   path: string
 ): Promise<Response | null> => {
+  
   const url = new URL(request.url);
   const method = request.method;
 
